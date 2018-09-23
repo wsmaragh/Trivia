@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30x-Bp-D5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udE-ik-EuB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-om-9ca">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s9S-rH-9Xs">
                                     <size key="itemSize" width="177" height="151"/>
@@ -74,7 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Category" id="wiL-t5-6Hj"/>
+                    <navigationItem key="navigationItem" title="Select Category" id="wiL-t5-6Hj">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="DHI-40-Xmp"/>
+                        <barButtonItem key="rightBarButtonItem" image="person" id="TMq-CR-Pwv"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="8pC-om-9ca" id="zsN-mL-a0H"/>
                     </connections>
@@ -250,24 +253,6 @@
             </objects>
             <point key="canvasLocation" x="2848.8000000000002" y="-96.7016491754123"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="j9f-Y3-pTh">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="30x-Bp-D5H" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zJL-Xh-TFm">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="udE-ik-EuB" kind="relationship" relationship="viewControllers" id="yXT-Au-Pj9"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CFK-DA-dbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
-        </scene>
         <!--Trivia-->
         <scene sceneID="KQR-Ty-QCp">
             <objects>
@@ -291,6 +276,8 @@
     <resources>
         <image name="Blank" width="96" height="96"/>
         <image name="bgTimer" width="532" height="640"/>
+        <image name="menu" width="25" height="25"/>
+        <image name="person" width="24" height="24"/>
         <image name="tab_brain_empty" width="25" height="25"/>
         <image name="tab_brain_filled" width="25" height="25"/>
         <namedColor name="colorHard">
