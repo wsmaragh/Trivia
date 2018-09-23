@@ -6,7 +6,7 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
 
-<img src="" style="max-width:100%;">
+<img src="https://github.com/wsmaragh/Trivia/blob/master/Trivia/Supporting/Assets.xcassets/triviaMain.imageset/triviaMain.png" style="max-width:100%;">
 
 ## Features:
 
